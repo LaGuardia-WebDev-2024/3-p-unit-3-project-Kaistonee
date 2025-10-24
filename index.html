@@ -22,6 +22,13 @@ Select ONE Additional Feature to Add
   
   <style>
 
+
+
+.content {
+  width: 30%;
+  margin:auto;
+  border: 1px slategray;
+}
 #header {
   font-size: 60px;
   font-weight:  900;
@@ -29,57 +36,77 @@ Select ONE Additional Feature to Add
   color: transparent;
   background-clip: text;
   -webkit-background-clip: clip;
-  font-family:fantasy;
+  font-family: fantasy;
  background-color: rgba(247, 242, 242, 0.445);
 }
- #cake { 
+ 
+#Contents {
+  font-size: 24px;
+  font-weight: 900;
+  background-image: linear-gradient( #553c9a, #b393d3, #27F5AD);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: clip;
+  font-family: cursive;
+}
+
+#cake { 
+ 
   font-size: 25px;
   font-weight:  700;
   background-image: linear-gradient( #854e35, #ce280b);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: clip;
+  font-family: cursive;
  }
-  body {
-  background-image: url(https://i.pinimg.com/236x/8d/4f/37/8d4f3747cb6448c01d03f7938d0a5ab7.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative; /* allows pseudo-element positioning */
-  z-index: 0; /* base layer */
-}
 
-body::before {
-  content: "";
-  position: absolute; /* positioned over the body but under content */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.4); /* adjust 0.5 for transparency */
-  z-index: 0; /* behind text */
-}
-
+ li::marker {
+  font-size: 1.2em;
+  color: #b393d3;
+ }
  
-  
+table {
+    border: 2px solid rgb(170, 12, 12); /* This creates the outline around the entire table */
+    border-collapse: collapse; /* This merges cell borders into a single line */
+}
+
+th, td {
+    border: 1px solid #ccc; /* Optional: Add subtle borders to individual cells */
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+
+}
+
+body {
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>❤️</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+
 
 
  </style>
 </head>
 
-<body>
+<body style="background-image: url(https://www.color-hex.com/palettes/1011407.png)
+  ; ">
+<div class="content"> 
 
-  
   <h1 id="header"> Kai's Recipe Book</h1>
 
-  <h2>Contents:</h2>
+  <h2 id="Contents">Contents:</h2>
 
-  <ol>
+  <ul>
     <li><a href="https://sallysbakingaddiction.com/chocolate-raspberry-cake/"> Chocolate Raspberry Cake</a> 🍫🍰</li>
-    <li> <a href="https://www.seriouseats.com/pasta-with-vodka-sauce"> Pasta with Vodka Sauce</a></li>
-    </ol>
+    <li> <a href="https://www.seriouseats.com/pasta-with-vodka-sauce"> Pasta with Vodka Sauce 🍝</a></li>
+    <li> <a href= "https://www.epicurious.com/recipes/food/views/down-south-goat-biryani-asha-gomez"> Goat Biryani 🍚 🥘</a></li>
+    
+  </ul>
 
-  <h2 id="cake"> #1: Chocolate Raspberry Cake
+  <h2  id="cake"> #1: Chocolate Raspberry Cake
   </h2>
 
   <ul>
@@ -94,7 +121,20 @@ body::before {
         <th>Quantity</th>
       </tr>
     </thead>
+   
     <tbody>
+      <tr>
+        <td>Sugar</td>
+        <td>A LOT</td>
+      </tr>
+    
+    
+      <tr>
+        <td>Ingredient #1</td>
+        <td>Quantity #1</td>
+      </tr>
+    
+    
       <tr>
         <td>Ingredient #1</td>
         <td>Quantity #1</td>
@@ -106,7 +146,7 @@ body::before {
   </p>
 
   <p><em>Source: <a href="?">Some recipes websites</a></em></p>
-
+</div>
 </body>
 
 </html>
